@@ -16,8 +16,8 @@ export default function Results({ results }) {
                     <ResultCard key={result.id} result={result} />
                 )
             }) :
-                <p>
-                    hi
+                <p className=' font-semibold text-center'>
+                    No Results Found
                 </p>
             }
         </div>
