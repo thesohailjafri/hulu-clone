@@ -11,13 +11,17 @@ export default function ResultCard({ result }) {
          xl:hover:scale-[1.06]
          2xl:hover:scale-[1.04]
          '>
-            <Image
-                className=' object-contain'
-                layout='responsive'
-                height={1080}
-                width={1920}
-                alt={result.title}
-                src={BASE_IMG_URL + result?.backdrop_path || result?.poster_path} />
+            <div>
+                <Image
+                    className=' object-contain'
+                    layout='responsive'
+                    height={1080}
+                    width={1920}
+                    alt={result.title}
+                    src={BASE_IMG_URL + result?.backdrop_path || result?.poster_path} />
+
+            </div>
+
             <div className='p-3 flex flex-col gap-y-1 flex-grow'>
                 <h3 className=' font-semibold text-2xl truncate max-w-md text-white'>
                     {result.title}
